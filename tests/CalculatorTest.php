@@ -5,12 +5,12 @@ class CalculatorTests extends TestCase
 {
     private $calculator;
  
-    protected function setUp()
+    protected function setUpBeforeClass()
     {
         $this->calculator = new calculadora();
     }
  
-    protected function tearDown()
+    protected function tearDownAfterClass()
     {
         $this->calculator = NULL;
     }
